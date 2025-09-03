@@ -1,0 +1,2 @@
+# G3EfficiencyLab
+Tech_Journey技術者コミュニティ04_開発・業務効率化グループ3のリポジトリ
