@@ -1,0 +1,49 @@
+
+name: "機能要望"
+description: "新機能や改善の提案"
+title: "[機能] 簡潔なタイトル"
+labels: ["種別:機能", "優先度:中"]
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: 概要
+      placeholder: 例）検索結果に並び替え機能を追加したい
+    validations:
+      required: true
+  - type: textarea
+    id: background
+    attributes:
+      label: 背景・課題
+      placeholder: 例）レコード数が増え、目的のデータに到達しづらい
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 提案内容
+      placeholder: 例）作成日・更新日・名前で昇順/降順の切替
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 受け入れ基準（完了の定義）
+      placeholder: 例）一覧画面で並び替えができ、選択状態がURLに保持される
+  - type: dropdown
+    id: area
+    attributes:
+      label: 想定エリア
+      options:
+        - Frontend
+        - Backend
+        - Infra
+        - Docs
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 優先度
+      options:
+        - 高
+        - 中
+        - 低
+    validations:
+      required: true

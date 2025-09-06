@@ -1,0 +1,37 @@
+
+# 基本種別
+- name: "種別:バグ"
+  color: "d73a4a"
+  description: "不具合"
+- name: "種別:機能"
+  color: "a2eeef"
+  description: "新機能 / 改善"
+- name: "種別:タスク"
+  color: "cfd3d7"
+  description: "保守・運用・その他"
+
+# 優先度
+- name: "優先度:高"
+  color: "b60205"
+- name: "優先度:中"
+  color: "fbca04"
+- name: "優先度:低"
+  color: "0e8a16"
+
+# エリア
+- name: "エリア:Frontend"
+  color: "1d76db"
+- name: "エリア:Backend"
+  color: "5319e7"
+- name: "エリア:Infra"
+  color: "0052cc"
+- name: "エリア:Docs"
+  color: "0e8a16"
+
+# Discussion
+- name: "discussion:Q&A"
+  color: "ededed"
+- name: "discussion:Idea"
+  color: "ededed"
+- name: "discussion:Announcement"
+  color: "ededed"

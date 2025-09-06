@@ -1,0 +1,73 @@
+
+name: "バグ報告"
+description: "不具合の報告用テンプレート"
+title: "[バグ] 簡潔なタイトル"
+labels: ["種別:バグ", "優先度:中"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ありがとうございます。再現に必要な情報をできるだけ具体的にご記入ください。
+  - type: input
+    id: summary
+    attributes:
+      label: 概要
+      description: 何が起きていますか？一文で
+      placeholder: 例）保存ボタンを押してもエラーが表示される
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順
+      description: 手順を番号付きで記載してください
+      placeholder: |
+        1. xxx ページを開く
+        2. 保存ボタンをクリック
+        3. 500 エラーが表示
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待する結果
+      placeholder: 例）保存が成功し、トーストが表示される
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際の結果
+      placeholder: 例）500 エラーが表示される
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: 環境
+      description: ブラウザ / OS / アプリ版 / バージョンなど
+      placeholder: 例）Chrome 126 / Windows 11
+  - type: checkboxes
+    id: impact
+    attributes:
+      label: 影響範囲
+      options:
+        - label: 本番に影響
+        - label: 一部ユーザーのみ
+        - label: ワークアラウンドあり
+  - type: textarea
+    id: attachments
+    attributes:
+      label: ログ・スクリーンショット
+      description: 可能であれば貼付してください
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 優先度
+      options:
+        - 高
+        - 中
+        - 低
+    validations:
+      required: true

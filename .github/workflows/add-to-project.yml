@@ -1,0 +1,27 @@
+
+name: Add to Project (SMTrustGroup/2)
+
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+  projects: write
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add to GitHub Project
+        uses: actions/add-to-project@v1.0.1
+        with:
+          project-url: https://github.com/orgs/SMTrustGroup/projects/2
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          # 任意: Projectのカスタムフィールドが存在する場合、初期値を設定可能
+          # field-keys: "ステータス,優先度"
+          # field-values: "受け入れ待ち,中"

@@ -1,0 +1,14 @@
+
+title: "お知らせ: {内容を記入}"
+labels: ["discussion:Announcement"]
+body:
+  - type: markdown
+    attributes:
+      value: "リリース情報、重要なお知らせ、メンテナンス予定などを共有します。"
+  - type: textarea
+    id: details
+    attributes:
+      label: 詳細
+      placeholder: いつ・どこで・何を・影響範囲・対応方法
+    validations:
+      required: true

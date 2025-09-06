@@ -1,0 +1,9 @@
+
+blank_issues_enabled: false
+contact_links:
+  - name: よくある質問（FAQ）
+    url: https://example.com/faq
+    about: 問題を作成する前にご確認ください
+  - name: セキュリティ脆弱性の報告
+    url: https://example.com/security
+    about: センシティブな内容は公開Issueではなくこちらへ

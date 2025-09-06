@@ -1,0 +1,21 @@
+
+title: "アイデア: 簡潔なタイトル"
+labels: ["discussion:Idea"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: アイデアの概要
+      placeholder: 例）ボードにWIP制限を入れてボトルネックを見える化したい
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: 期待される価値
+      placeholder: 利点・インパクト・対象ユーザー
+  - type: textarea
+    id: notes
+    attributes:
+      label: 参考
+      placeholder: 図、スクリーンショット、リンクなど

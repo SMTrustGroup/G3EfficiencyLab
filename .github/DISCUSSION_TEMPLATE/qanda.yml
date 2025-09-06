@@ -1,0 +1,24 @@
+
+title: "質問: 簡潔なタイトル"
+labels: ["discussion:Q&A"]
+body:
+  - type: markdown
+    attributes:
+      value: "質問ありがとうございます。再現や目的を明確にご記入ください。"
+  - type: textarea
+    id: question
+    attributes:
+      label: 質問内容
+      placeholder: 例）APIでトークンが無効になるのはなぜ？
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: 試したこと
+      placeholder: 実施した手順・参考にした情報など
+  - type: textarea
+    id: context
+    attributes:
+      label: 背景・目的
+      placeholder: 何を達成したいのか、制約条件など
