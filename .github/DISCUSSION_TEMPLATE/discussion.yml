@@ -1,27 +1,45 @@
-## 💡 議題（Discussion Topic）
-<!-- 技術的なテーマや課題を簡潔に記述 -->
+name: 技術テーマの議論
+description: 技術的な課題やアイデアについて議論するためのテンプレートです。
+labels:
+  - discussion
+  - technical
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 💡 議題（Discussion Topic）
+        技術的なテーマや課題を簡潔に記述してください。
 
----
+  - type: textarea
+    id: background
+    attributes:
+      label: 🎯 背景（Background）
+      description: なぜこの議題を立てたのか、どんな課題や状況があるのかを説明してください。
+      placeholder: 例：現在のプロジェクトでは、状態管理の方法に課題があり、最適なアプローチを検討しています。
 
-## 🎯 背景（Background）
-<!-- なぜこの議題を立てたのか、どんな課題や状況があるのかを説明 -->
+  - type: textarea
+    id: current-approach
+    attributes:
+      label: 🧪 現状のアプローチ（Current Approach）
+      description: 現在採用している方法や技術、問題点などを記述してください。
+      placeholder: 例：useContextを使用しているが、再レンダリングが多くパフォーマンスに影響しています。
 
----
+  - type: textarea
+    id: discussion-points
+    attributes:
+      label: ❓ 議論したいポイント（Discussion Points）
+      description: 参加者に意見を求めたい具体的な項目を列挙してください。
+      placeholder: 例：Redux Toolkitの導入メリットとデメリットは？
 
-## 🧪 現状のアプローチ（Current Approach）
-<!-- 現在採用している方法や技術、問題点など -->
+  - type: textarea
+    id: references
+    attributes:
+      label: 📎 関連資料・リンク（References）
+      description: 参考になるドキュメントや記事、コードなどがあれば記載してください。
+      placeholder: 例：React公式ドキュメント、Redux Toolkitの紹介記事など
 
----
-
-## ❓ 議論したいポイント（Discussion Points）
-<!-- 参加者に意見を求めたい具体的な項目 -->
-
----
-
-## 📎 関連資料・リンク（References）
-<!-- 参考になるドキュメントや記事、コードなど -->
-
----
-
-## 🗣️ コメント歓迎！（Call for Comments）
-この議題に関して、皆さんの経験や知見をぜひ共有してください 🙏
+  - type: markdown
+    attributes:
+      value: |
+        ## 🗣️ コメント歓迎！（Call for Comments）
+        この議題に関して、皆さんの経験や知見をぜひ共有してください 🙏
